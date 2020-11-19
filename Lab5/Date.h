@@ -14,7 +14,6 @@ public:
 		
 	Date();
 	Date(int day, int month, int year);
-
 	~Date();
 
 
@@ -22,7 +21,12 @@ public:
 	void setMonth(int month);
 	void setYear(int year);
 
-	
 
+	int getDay();
+	int getMonth();
+	int getYear();
+
+
+	void showDate();
 };
 #endif
