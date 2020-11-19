@@ -16,7 +16,8 @@ class Company : virtual public Person
 public:
 
 	Company();
-	Company(string compName, int dayF, int monthF, int yearF, int foundCapital, string name, string surName, string telNumb, int day, int month, int year);
+	Company(string compName, int dayF, int monthF, int yearF, int foundCapital,
+		string name, string surName, string telNumb, int day, int month, int year);
 	~Company();
 
 	void setCompName(string compName);

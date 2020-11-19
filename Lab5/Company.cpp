@@ -11,7 +11,11 @@ Company::Company(string compName, int dayF, int monthF, int yearF, int foundCapi
 	string name, string surName, string telNumb, int day, int month, int year): Person(name,  surName,  telNumb,  day,  month,  year)
 {
 	this->compName = compName;
-	dateOfFoundation.setDate(dayF, monthF, yearF);
+	//dateOfFoundation.setDate(dayF, monthF, yearF);
+	dateOfFoundation.setDay(dayF);
+	dateOfFoundation.setMonth(monthF);
+	dateOfFoundation.setYear(yearF);
+
 	this->fîundCapital = foundCapital;
 }
 
