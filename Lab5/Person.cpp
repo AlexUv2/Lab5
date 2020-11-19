@@ -32,10 +32,20 @@ void Person::setTelNumb(string telNumb)
 	this->telNumb = telNumb;
 }
 
-void Person::setDate(int day, int month, int year)
+string Person::getName()
 {
-	setDay(day);
-	setMonth(month);
-	setYear(year);
+	return name;
 }
+
+string Person::getSurName()
+{
+	return surName;
+}
+
+string Person::getTelNumb()
+{
+	return telNumb;
+}
+
+
 

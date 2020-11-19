@@ -11,21 +11,21 @@ using namespace std;
 
 int main()
 {
-    
-    Person person;
+   // Company company("company", 13, 3, 2002, 13000, "Alex", "Uvarovskii", "0992926016", 10, 10, 2010);
 
-    cout << person.getMonth() << endl;
-
-
+   
+    Company company;
 
     int day = 5;
     int month = 10;
     int year = 2000;
 
-    person.setDate(day, month, year);
-    
+    company.setDate(day, month, year);
 
-    person.showDate();
+    company.showDate();
+    cout << endl;
+
+    
 
     return 0;
 }

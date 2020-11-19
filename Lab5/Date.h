@@ -21,6 +21,8 @@ public:
 	void setMonth(int month);
 	void setYear(int year);
 
+	void setDate(int day, int month, int year);
+
 
 	int getDay();
 	int getMonth();

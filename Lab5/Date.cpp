@@ -17,7 +17,6 @@ Date::Date(int day, int month, int year)
 
 Date::~Date()
 {
-	std::cout << " Date desrtuctor called";
 }
 
 void Date::setDay(int day)
@@ -33,6 +32,13 @@ void Date::setMonth(int month)
 void Date::setYear(int year)
 {
 	this->year = year;
+}
+
+void Date::setDate(int day, int month, int year)
+{
+	setDay(day);
+	setMonth(month);
+	setYear(year);
 }
 
 int Date::getDay()

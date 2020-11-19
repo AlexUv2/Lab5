@@ -24,9 +24,13 @@ class Person : public Date
 	void setName(string name);
 	void setSurName(string surName);
 	void setTelNumb(string telNumb);
-	
 
-	void setDate(int day, int month, int year);
+
+	string getName();
+	string getSurName();
+	string getTelNumb();
+
+
 
 };
 

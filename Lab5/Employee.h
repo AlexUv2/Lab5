@@ -5,8 +5,21 @@
 #ifndef EMPLOYEE_H_
 #define EMPLOYEE_H_
 
-class Employee :  public Date
+class Employee : virtual public Person
 {
+	string position;
+ public:
+
+	 Employee();
+	 Employee(string position, string name, string surName, string telNumb, int day, int month, int year);
+
+
+	 ~Employee();
+
+
+
+	 void setPosition(string position);
+	 string getPosition();
 };
 
 
