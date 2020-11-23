@@ -7,16 +7,16 @@ Company::Company()
 	//Äàòà îñíîâàíèÿ ïî óìîë÷àíèþ óñòàíîâèëà çíà÷åíèÿ
 }
 
-Company::Company(string compName, int dayF, int monthF, int yearF, int foundCapital, 
-	string name, string surName, string telNumb, int day, int month, int year): Person(name,  surName,  telNumb,  day,  month,  year)
+Company::Company(string compName, int foundCapital, 
+	string name, string surName, string telNumb, int day, int month, int year): Person(name, surName, telNumb, day, month, year)
 {
 	this->compName = compName;
 	//dateOfFoundation.setDate(dayF, monthF, yearF);
-	dateOfFoundation.setDay(dayF);
-	dateOfFoundation.setMonth(monthF);
-	dateOfFoundation.setYear(yearF);
-
+	//dateOfFoundation.setDay(dayF);
+	//dateOfFoundation.setMonth(monthF);
+	//dateOfFoundation.setYear(yearF);
 	this->fîundCapital = foundCapital;
+	
 }
 
 Company::~Company()
@@ -29,12 +29,12 @@ void Company::setCompName(string compName)
 	this->compName = compName;
 }
 
-void Company::setDateOfFoundation(int day, int month, int year)
+/*void Company::setDateOfFoundation(int day, int month, int year)
 {
 	dateOfFoundation.setDay(day);
 	dateOfFoundation.setMonth(month);
 	dateOfFoundation.setYear(year);
-}
+}*/
 
 void Company::setFoundCap(int foundCapital)
 {
@@ -51,9 +51,9 @@ int Company::getFoundCaptial()
 	return fîundCapital;
 }
 
-string Company::getDateOfFoundation()
+/*string Company::getDateOfFoundation()
 {
 	return to_string(dateOfFoundation.getDay()) + "." + to_string(dateOfFoundation.getMonth()) + "." + to_string(dateOfFoundation.getYear());
-}
+}*/
 
 

@@ -11,27 +11,44 @@ using namespace std;
 
 int main()
 {
-    //Company company("company", 13, 3, 2002, 13000, "Alex", "Uvarovskii", "0992926016", 10, 10, 2010);
-
-    Contract company;
+    Contract contract(10, "Director", "sasha", "uvar", "9359995", 13, 3, 2002, "Italy", 13000);
 
     int day = 5;
     int month = 10;
     int year = 2000;
 
-    company.setDate(day, month, year);
-
-    company.showDate();
+    //contract.setDay(day);
     
     
     cout << endl;
+    cout << contract.getSum() << endl;
+    cout << contract.getPosition() << endl;
+    cout << contract.getName() << endl;
+    cout << contract.getSurName() << endl;
+    cout << contract.getTelNumb() << endl;
+    cout << contract.getDay() << endl;
+    cout << contract.getMonth() << endl;
+    cout << contract.getYear() << endl;
+    cout << contract.getCompName() << endl;
+    cout << contract.getFoundCaptial() << endl;
 
+
+    contract.setName("Sasha");
+
+
+    cout << endl;
+
+    cout << contract.getSum() << endl;
+    cout << contract.getPosition() << endl;
+    cout << contract.getName() << endl;
+    cout << contract.getSurName() << endl;
+    cout << contract.getTelNumb() << endl;
+    cout << contract.getDay() << endl;
+    cout << contract.getMonth() << endl;
+    cout << contract.getYear() << endl;
+    cout << contract.getCompName() << endl;
+    cout << contract.getFoundCaptial() << endl;
     
-    cout << company.getDateOfFoundation();
-
-
-    cout << endl << company.getName();
-
     return 0;
 }
 

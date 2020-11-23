@@ -9,6 +9,7 @@ Employee::Employee(string position, string name, string surName, string telNumb,
 	Person(name, surName, telNumb, day, month, year)
 {
 	this->position = position;
+	
 }
 
 Employee::~Employee()

@@ -8,7 +8,7 @@ using namespace std;
 
 
 
-class Person : public Date
+class Person : virtual public Date
 {
 	string name;
 	string surName;
