@@ -8,11 +8,19 @@
 
 class ListOfConts : public Contract
 {
-	list<Contract> contList;
+	list<Contract> lst;
 	int numOfConts;
 
 public:
-	
+
+     void addContractToList(Contract obj);
+     void AddContractAtPosition(int position, Contract obj);
+     void DeleteContractAtPosition(int positionOfNumber);
+     void DeleteAllContract();
+     void SizeOfList();
+  
+
+
 
 
 

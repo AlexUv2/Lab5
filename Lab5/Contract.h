@@ -9,6 +9,7 @@
 
 class Contract : public Employee, public Company
 {
+protected:
 	//Date dateOfContract;
 	int sum;
 public:
