@@ -7,16 +7,14 @@
 
 class Employee : virtual public Person
 {
+protected:
 	string position;
  public:
 
 	 Employee();
 	 Employee(string position, string name, string surName, string telNumb, int day, int month, int year);
-
-
+	 Employee(const Employee& cpy);
 	 ~Employee();
-
-
 
 	 void setPosition(string position);
 	 string getPosition();

@@ -10,14 +10,15 @@
 
 class Company : virtual public Person
 {
+protected:
 	string compName;
 	//Date dateOfFoundation;
 	int fîundCapital; //Óñòàíîâ÷èé êàï³òàë
 public:
-
 	Company();
 	Company(string compName, int foundCapital,
 		string name, string surName, string telNumb, int day, int month, int year);
+	Company(const Company& cpy);
 	~Company();
 
 	void setCompName(string compName);

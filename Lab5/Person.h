@@ -8,8 +8,9 @@ using namespace std;
 
 
 
-class Person : virtual public Date
+class Person :  public Date
 {
+protected:
 	string name;
 	string surName;
 	string telNumb;
@@ -19,7 +20,8 @@ class Person : virtual public Date
 	
 	Person();
 	Person(string name, string surName, string telNumb, int day, int month, int year);
-
+	Person(const Person& spy);
+	~Person();
 
 	void setName(string name);
 	void setSurName(string surName);

@@ -12,6 +12,11 @@ Employee::Employee(string position, string name, string surName, string telNumb,
 	
 }
 
+Employee::Employee(const Employee& cpy): Person(cpy.name, cpy.surName, cpy.telNumb, cpy.day, cpy.month, cpy.year)
+{
+	position = cpy.position;
+}
+
 Employee::~Employee()
 {
 }

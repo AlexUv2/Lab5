@@ -14,9 +14,20 @@ Contract::Contract(int sum, string position, string name, string surName, string
 	//dateOfContract.setDay(dayC);
 	//dateOfContract.setMonth(monthC);
 	//dateOfContract.setYear(yearC);
+
+
 	setDay(day);
 	setMonth(month);
-	setYear(year);
+	setYear(year);    
+	setName(name);
+	setSurName(surName);
+	setTelNumb(telNumb);
+}
+Contract::Contract(const Contract& cpy):
+	Employee(cpy.position, cpy.name, cpy.surName, cpy.telNumb, cpy.day, cpy.month, cpy.year),
+	Company(cpy.compName, cpy.fîundCapital, cpy.name, cpy.surName, cpy.telNumb, cpy.day, cpy.month, cpy.year)
+{
+	sum = cpy.sum;
 }
 Contract::~Contract()
 {

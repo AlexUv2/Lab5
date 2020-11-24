@@ -11,12 +11,17 @@ Company::Company(string compName, int foundCapital,
 	string name, string surName, string telNumb, int day, int month, int year): Person(name, surName, telNumb, day, month, year)
 {
 	this->compName = compName;
+	this->fîundCapital = foundCapital;
 	//dateOfFoundation.setDate(dayF, monthF, yearF);
 	//dateOfFoundation.setDay(dayF);
 	//dateOfFoundation.setMonth(monthF);
 	//dateOfFoundation.setYear(yearF);
-	this->fîundCapital = foundCapital;
-	
+}
+
+Company::Company(const Company& cpy) : Person(cpy.name, cpy.surName, cpy.telNumb, cpy.day, cpy.month, cpy.year)
+{
+	compName = cpy.compName;
+	fîundCapital = cpy.fîundCapital;
 }
 
 Company::~Company()

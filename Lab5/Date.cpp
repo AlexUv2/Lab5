@@ -15,6 +15,13 @@ Date::Date(int day, int month, int year)
 	this->year = year;
 }
 
+Date::Date(const Date& cpy)
+{
+	day = cpy.day;
+	month = cpy.month;
+	year = cpy.year;
+}
+
 Date::~Date()
 {
 }

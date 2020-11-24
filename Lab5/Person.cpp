@@ -17,6 +17,17 @@ Person::Person(string name, string surName, string telNumb, int day, int month, 
 	setYear(year);
 }
 
+Person::Person(const Person& cpy) : Date(cpy.day, cpy.month, cpy.year)
+{
+	name = cpy.name;
+	surName = cpy.surName;
+	telNumb = cpy.telNumb;
+}
+
+Person::~Person()
+{
+}
+
 void Person::setName(string name)
 {
 	this->name = name;
